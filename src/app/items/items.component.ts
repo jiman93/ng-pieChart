@@ -13,14 +13,12 @@ export class ItemsComponent implements OnInit {
       view: any[] = [700, 400];
 
       // options
-      showXAxis = true;
-      showYAxis = true;
-      gradient = false;
       showLegend = true;
-      showXAxisLabel = true;
-      xAxisLabel = 'Country';
-      showYAxisLabel = true;
-      yAxisLabel = 'Population';
+
+      // pie
+      showLabels = true;
+      explodeSlices = false;
+      doughnut = false;
 
       colorScheme = {
         domain: ['royalblue', 'yellow', 'crimson', 'limegreen', 'magenta']

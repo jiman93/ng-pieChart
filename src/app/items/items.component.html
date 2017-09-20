@@ -1,21 +1,18 @@
 <h1>
-  Vertical Bar Chart
+  Pie Chart
 </h1>
 
 <div style="height: 100px">
-  <ngx-charts-bar-vertical
-   [view]="view"
-   [scheme]="colorScheme"
-   [results]="data"
-   [gradient]="gradient"
-   [xAxis]="showXAxis"
-   [yAxis]="showYAxis"
-   [legend]="showLegend"
-   [showXAxisLabel]="showXAxisLabel"
-   [showYAxisLabel]="showYAxisLabel"
-   [xAxisLabel]="xAxisLabel"
-   [yAxisLabel]="yAxisLabel"
-   (select)="onSelect($event)">
- </ngx-charts-bar-vertical>
+  <ngx-charts-pie-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="data"
+  [legend]="showLegend"
+  [explodeSlices]="explodeSlices"
+  [labels]="showLabels"
+  [doughnut]="doughnut"
+  [gradient]="gradient"
+  (select)="onSelect($event)">
+</ngx-charts-pie-chart>
 </div>
 
